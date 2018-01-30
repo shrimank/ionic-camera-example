@@ -20,5 +20,6 @@ then
 
 # run in android device
 Make sure you have connected to android device via USB and debugging is enabled in the phone
+
 <code>$ ionic cordova run android --device </code>
 
