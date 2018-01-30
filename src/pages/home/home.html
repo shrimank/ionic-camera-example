@@ -1,14 +1,23 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar  color="secondary">
     <ion-title>
-      Ionic Blank
+      Camera Demo
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+    <button ion-button (click)="clickPicture()">
+      <ion-icon name="camera" start></ion-icon>
+      <ion-label  margin>Take Picture</ion-label>
+    </button>
+
+    <ion-item padding>
+      <ion-img [src]="takenPicture" ></ion-img>
+    </ion-item>
+
+    <p>Image data:{{imgData}}</p>
+
+
 </ion-content>
